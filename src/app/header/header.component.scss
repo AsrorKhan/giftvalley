@@ -1,0 +1,63 @@
+@import "src/assets/base/color";
+@import '~jquery-nice-select/css/nice-select';
+
+.before-header {
+  background: black;
+
+  &__left,
+  &__right {
+    display: flex;
+    color: #fff;
+
+    p {
+      display: flex;
+      align-items: center;
+      margin: 0 10px;
+      transition: all .2s;
+      cursor: pointer;
+
+      &:hover {
+        color: $gold;
+
+        a {
+          color: $gold;
+        }
+      }
+
+      img {
+        margin-right: 10px;
+      }
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  &__right {
+    justify-content: flex-end;
+    select {
+      border: none;
+      outline: none;
+      color: #ffffff;
+      background: transparent;
+      cursor: pointer;
+      option {
+        background: black;
+      }
+    }
+  }
+
+
+  .icon {
+    &__phone {
+      transform: rotate(90deg);
+    }
+  }
+
+  [nz-row] {
+    padding: 20px 50px;
+  }
+
+
+}
