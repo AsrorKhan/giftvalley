@@ -4,12 +4,14 @@ import {NzGridModule} from "ng-zorro-antd/grid";
 import {NzButtonModule} from "ng-zorro-antd/button";
 import {NzIconModule} from "ng-zorro-antd/icon";
 import {IconDefinition} from '@ant-design/icons-angular';
-import {PhoneOutline} from '@ant-design/icons-angular/icons';
+import {PhoneOutline, ShoppingCartOutline, MenuUnfoldOutline, CloseCircleTwoTone} from '@ant-design/icons-angular/icons';
 import {NzLayoutModule} from "ng-zorro-antd/layout";
 
 const icons: IconDefinition[] = [
   PhoneOutline,
-
+  ShoppingCartOutline,
+  MenuUnfoldOutline,
+  CloseCircleTwoTone
 ];
 
 @NgModule({
@@ -24,6 +26,7 @@ const icons: IconDefinition[] = [
     NzButtonModule,
     NzIconModule,
     NzLayoutModule,
+
 
   ],
   providers: [],

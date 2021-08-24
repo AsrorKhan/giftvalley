@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
-  selectedValue: any
-
+  showSidebar: boolean = false;
   constructor() { }
   ngOnInit(): void {
   }
+
+
+
+
 }

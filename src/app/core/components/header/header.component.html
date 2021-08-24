@@ -1,0 +1,81 @@
+<div class="before-header">
+  <div nz-row>
+    <div nz-col nzSpan="12">
+      <div class="before-header__left">
+        <p><img src="../../../../assets/icons/icon-phone.svg" alt="">+998 99 840-75-00</p>
+        <p><img src="../../../../assets/icons/icon-envelope.svg" alt=""><a href="infogiftvalley.shop@gmail.com">infogiftvalley.shop@gmail.com</a>
+        </p>
+      </div>
+    </div>
+    <div nz-col nzSpan="12">
+      <div class="before-header__right">
+        <p><a href=""><img src="../../../../assets/icons/icon-user.svg" alt="">Регистрация &nbsp; / &nbsp; Вход</a></p>
+        <p>
+          <select name="" id="">
+            <option value="">Русский</option>
+            <option value="">O'zbekcha</option>
+            <option value="">English</option>
+          </select>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<header class="header">
+  <div class="hidden-sidebar">
+    <div
+      class="content"
+      [ngClass]="{
+        visible: showSidebar
+      }"
+    >
+      <div class="hide-button"><i nz-icon nzType="close-circle" (click)="showSidebar = false" nzTheme="outline"></i></div>
+      <ul>
+        <li><a href="">КАТАЛОГ</a></li>
+        <li><a href="">АКЦИИ</a></li>
+        <li><a href="">НОВОСТИ</a></li>
+        <li><a href="">О НАС</a></li>
+        <li><a href="">КОНТАКТЫ</a></li>
+      </ul>
+    </div>
+    <div nz-row>
+      <div nz-col nzFlex="100px" (click)="showSidebar = !showSidebar"><i class="show-menu-button" nz-icon nzType="menu-unfold" nzTheme="outline"></i></div>
+      <div nz-col nzFlex="auto">Fill Rest</div>
+    </div>
+  </div>
+
+  <div nz-row class="header__items">
+    <div nz-col nzSpan="18" nzPush="6">
+      <div class="header__items">
+        <div class="header__navs-list">
+          <a href="">КАТАЛОГ</a>
+          <a href="">АКЦИИ</a>
+          <a href="">НОВОСТИ</a>
+          <a href="">О НАС</a>
+          <a href="">КОНТАКТЫ</a>
+          <button><i nz-icon nzType="search" nzTheme="outline"></i></button>
+        </div>
+
+        <div class="header__shopping-cart">
+          <a href="">
+            <i nz-icon nzType="shopping-cart" nzTheme="outline"></i>
+            Корзина
+          </a>
+        </div>
+      </div>
+    </div>
+    <div nz-col nzSpan="6" nzPull="18">
+      <a href="/" class="header__logo">
+        <div class="header__logo">
+          <img src="../../../../assets/mockdata/img/img-project-logo.png" alt="">
+
+          <div class="header__logo--text"><p>Интернет магазин <br>сувениров</p></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</header>
+

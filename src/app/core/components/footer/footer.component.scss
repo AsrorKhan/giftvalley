@@ -1,0 +1,29 @@
+@import "src/assets/base/color";
+
+.footer {
+  min-height: 272px;
+  background: #37373B;
+
+  &__content-right {
+
+  }
+
+  &__content-logo {
+    width: 157px;
+    height: 100%;
+    background: $gold;
+
+    .middle-content{
+
+    }
+    .right-content,
+    .left-content{
+      height: 100%;
+      background: url("");
+    }
+
+
+  }
+
+
+}
