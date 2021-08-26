@@ -1,0 +1,25 @@
+<!--<div nz-row>-->
+<!--  <div class="card-item">-->
+<!--    <div class="card-item__type">{{cardItem.type}}</div>-->
+<!--    <div class="card-item__image">-->
+<!--      <img [src]="cardItem.imgUrl" alt="">-->
+<!--    </div>-->
+<!--    <div class="card-item__text"><h4>{{cardItem.title}}</h4></div>-->
+<!--    <div class="card-item__available">-->
+<!--      <p *ngIf="cardItem.isExist;else unset">Есть в наличии</p>-->
+<!--      <ng-template #unset><p >Нет в наличии</p></ng-template>-->
+<!--    </div>-->
+<!--    <div class="card-item__old-price">{{cardItem.oldPrice}}</div>-->
+<!--    <div class="card-item__price">{{cardItem.price}}</div>-->
+<!--    <div class="card-item__buy">-->
+<!--      <button>В КОРЗИНУ</button>-->
+<!--      <div class="like-item"></div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<div class="row">
+  <div *ngFor="let card of cards" class="col-sm-{{col.sm}} col-md-{{col.md}} col-lg-{{col.lg}}">
+    <span>{{ card.title }}</span>
+  </div>
+</div>
