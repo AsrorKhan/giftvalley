@@ -4,7 +4,7 @@ export const Cards: ICard[] = [
   {
     type: 'НОВИНКА',
     title: 'ДЕКОРАТИВНАЯ НАВОЛОЧКА "TUMOR" 50 СМ Х 50 СМ',
-    imgUrl: '../../../assets/mockdata/img/img-card-product1',
+    imgUrl: '../../../assets/mockdata/img/img-card-product1.png',
     isExist: false,
     oldPrice: '',
     price: 200000

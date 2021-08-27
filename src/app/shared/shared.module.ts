@@ -4,6 +4,7 @@ import {NzGridModule} from "ng-zorro-antd/grid";
 import {NzButtonModule} from "ng-zorro-antd/button";
 import {NzIconModule} from "ng-zorro-antd/icon";
 import {IconDefinition} from '@ant-design/icons-angular';
+
 import {
   CloseCircleTwoTone,
   MenuUnfoldOutline,
@@ -14,11 +15,13 @@ import {
   WechatOutline,
   FieldTimeOutline,
   MessageOutline,
-  PoweroffOutline
+  PoweroffOutline,
+
 } from '@ant-design/icons-angular/icons';
 import {NzLayoutModule} from "ng-zorro-antd/layout";
 import { CardListComponent } from './components/card-list/card-list.component';
 import { CardComponent } from './components/card/card.component';
+import {CommonModule} from "@angular/common";
 
 const icons: IconDefinition[] = [
   PhoneOutline,
@@ -31,6 +34,7 @@ const icons: IconDefinition[] = [
   FieldTimeOutline,
   MessageOutline,
   PoweroffOutline,
+
 ];
 
 @NgModule({
@@ -40,8 +44,10 @@ const icons: IconDefinition[] = [
   ],
   imports: [
     BrowserModule,
+    NzIconModule,
     NzIconModule.forRoot(icons),
     NzGridModule,
+    CommonModule,
   ],
   exports: [
     NzLayoutModule,

@@ -18,8 +18,30 @@
 <!--  </div>-->
 <!--</div>-->
 
-<div class="row">
-  <div *ngFor="let card of cards" class="col-sm-{{col.sm}} col-md-{{col.md}} col-lg-{{col.lg}}">
-    <span>{{ card.title }}</span>
+
+
+<div class="container">
+  <div class="row">
+    <div *ngFor="let cardItem of cards" class="col-lg-3 col-md-6 col-sm-12" >
+      <div class="card" >
+        <div class="card__img">
+          <div class="card__type"><span>{{cardItem.type}}</span></div>
+          <img class="" src="{{cardItem.imgUrl}}" alt="">
+        </div>
+
+        <div class="card-body">
+          <h5 class="card__title">{{cardItem.title}}</h5>
+          <ul class="card__details">
+            <li class="card__text" *ngIf="cardItem.isExist">Есть в наличии</li>
+            <li class="card__text" *ngIf="!cardItem.isExist">Нет в наличии</li>
+            <li class="card__old-price">{{cardItem.oldPrice}}</li>
+            <li class="card__price">{{cardItem.price}}</li>
+          </ul>
+
+
+        </div>
+        <a href="#" class="btn btn-primary">В КОРЗИНКУ</a>
+      </div>
+    </div>
   </div>
 </div>

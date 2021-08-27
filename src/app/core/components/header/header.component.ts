@@ -10,6 +10,16 @@ export class HeaderComponent implements OnInit {
   constructor() { }
   ngOnInit(): void {
   }
+  visible = false;
+
+  open(): void {
+    this.visible = true;
+  }
+
+  close(): void {
+    this.visible = false;
+  }
+
 
 
 
