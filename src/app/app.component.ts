@@ -9,7 +9,5 @@ import {DataService} from "./features/services/get-card-data.service";
 export class AppComponent {
   title = 'giftvalley';
 
-  constructor() {
-    console.log()
-  }
+
 }

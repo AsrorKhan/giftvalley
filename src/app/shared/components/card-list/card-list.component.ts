@@ -7,7 +7,7 @@ import {Col} from "../card/card.component";
   templateUrl: './card-list.component.html',
   styleUrls: ['./card-list.component.scss']
 })
-export class CardListComponent implements OnInit {
+export class CardListComponent {
   cardListData = Cards;
   col: Col = {
     sm: 6,
@@ -15,7 +15,5 @@ export class CardListComponent implements OnInit {
     lg: 4
   }
 
-  ngOnInit(): void {
-    console.log(this.cardListData)
-  }
+
 }

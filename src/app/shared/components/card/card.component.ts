@@ -13,6 +13,9 @@ export class CardComponent {
     sm: 1, md: 1, lg: 1
   };
 
+
+
+
   @Input() cards!: ICard[];
 
   // @Input() cardItem: ICard = {

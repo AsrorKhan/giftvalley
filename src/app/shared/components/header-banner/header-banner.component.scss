@@ -1,0 +1,85 @@
+@import "src/assets/base/color";
+
+
+.header-banner{
+  margin-bottom: 50px;
+  height: 100%;
+  &__head-bg {
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(5,5,5,0.014443277310924318) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(5,5,5,0.014443277310924318) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(5,5,5,0.014443277310924318) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#050505",GradientType=1);
+  }
+
+  &__head {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    padding: 40px;
+    width: 100%;
+    min-height: 500px;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    background: url("../../../../assets/mockdata/img/img-header-banner.png") no-repeat center center;
+    background-size: cover;
+    border-radius: 5px;
+  }
+
+
+  &__head-text {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-end;
+
+    .discount-info {
+      display: flex;
+
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        padding-right: 10px;
+        border-right: 1px solid #ffffff;
+
+        &:nth-child(2) {
+
+          border: none;
+          padding-left: 10px;
+        }
+      }
+      li{
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      h1 {
+        font-size: 50px;
+        color: $gold;
+      }
+    }
+
+    a {
+      cursor: pointer;
+      font-size: 13px;
+      padding: 10px 25px;
+      border-radius: 50px;
+      background: $gold;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: black;
+
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import "src/assets/base/color";
+
+.main-content {
+  z-index: 10;
+  position: relative;
+
+
+}
+
+
+
+.right-requisite{
+  animation: infinite-spinning 100s infinite;
+  z-index: -1;
+  width: 100%;
+  height: 900px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  background: url("../../../../assets/mockdata/img/rotate-requisite.png") no-repeat center center;
+  background-size: contain;
+}
+
+.left-requisite {
+  bottom: 0 !important;
+  animation: infinite-spinning 100s infinite;
+  z-index: -1;
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  text-align: center;
+  background: url("../../../../assets/mockdata/img/rotate-requisite.png") no-repeat center center;
+  background-size: contain;
+}
+
+//
+.bottom-requisite {
+  position: absolute;
+  animation: infinite-spinning linear 100s infinite;
+  z-index: 1;
+  width: 100%;
+  height: 1000px;
+  bottom: 0;
+  background: url("../../../../assets/mockdata/img/rotate-requisite.png") no-repeat center center;
+  background-size: contain;
+}
+
+//
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+.left-requisite{
+  display: none;
+}
+}

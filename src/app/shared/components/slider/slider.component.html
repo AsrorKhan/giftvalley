@@ -1,0 +1,16 @@
+
+<div class="slider-list">
+  <h3 class="slider-list__title">Хиты продаж</h3>
+  <nz-carousel  [nzEffect]="'fade'" [nzAutoPlay]="true" class="carousel">
+    <div nz-carousel-content  *ngFor="let item of bestSellerList">
+      <img class="slider-list__img" src="{{item.imgUrl}}" alt="">
+      <h5 class="slider-list__text">{{item.title}}</h5>
+      <div class="slider-list__price">
+        <h5 class="slider-list__number">{{item.price}}</h5>
+        <h5 class="slider-list__currency">Сум</h5>
+      </div>
+    </div>
+  </nz-carousel>
+</div>
+
+

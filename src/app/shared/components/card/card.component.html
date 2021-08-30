@@ -19,29 +19,36 @@
 <!--</div>-->
 
 
+<div class="">
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let cardItem of cards" class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card">
 
-<div class="container">
-  <div class="row">
-    <div *ngFor="let cardItem of cards" class="col-lg-3 col-md-6 col-sm-12" >
-      <div class="card" >
-        <div class="card__img">
-          <div class="card__type"><span>{{cardItem.type}}</span></div>
-          <img class="" src="{{cardItem.imgUrl}}" alt="">
+          <a href="#" class="card__img">
+            <div class="card__img-bg"></div>
+            <div class="card__more-info">Подробнее</div>
+            <div class="card__type" *ngIf="cardItem.type"><span>{{cardItem.type}}</span></div>
+            <div class="card__type" *ngElse><span>{{cardItem.type}}</span></div>
+            <img class="" src="{{cardItem.imgUrl}}" alt="">
+          </a>
+
+          <div class="card-body">
+            <h5 class="card__title">{{cardItem.title}}</h5>
+            <ul class="card__details">
+              <li class="card__text" *ngIf="cardItem.isExist">Есть в наличии</li>
+              <li class="card__text" *ngIf="!cardItem.isExist">Нет в наличии</li>
+              <li class="card__old-price" *ngIf="cardItem.oldPrice">{{cardItem.oldPrice}}</li>
+              <li class="card__price" *ngIf="cardItem.price">{{cardItem.price}} <span>сум</span></li>
+            </ul>
+          </div>
+          <div class="card_footer">
+            <a href="#" class="baskets">В КОРЗИНКУ</a>
+            <a href="#" class="like-item"><i nz-icon nzType="heart" nzTheme="outline"></i></a>
+          </div>
         </div>
-
-        <div class="card-body">
-          <h5 class="card__title">{{cardItem.title}}</h5>
-          <ul class="card__details">
-            <li class="card__text" *ngIf="cardItem.isExist">Есть в наличии</li>
-            <li class="card__text" *ngIf="!cardItem.isExist">Нет в наличии</li>
-            <li class="card__old-price">{{cardItem.oldPrice}}</li>
-            <li class="card__price">{{cardItem.price}}</li>
-          </ul>
-
-
-        </div>
-        <a href="#" class="btn btn-primary">В КОРЗИНКУ</a>
       </div>
     </div>
   </div>
+
 </div>

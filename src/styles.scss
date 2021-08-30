@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~ng-zorro-antd/ng-zorro-antd.min.css";
 @import "~bootstrap/dist/css/bootstrap.min.css";
+@import "./src/assets/base/color";
 
 
 [nz-row] {
@@ -8,4 +9,33 @@
 }
 body{
   background: #F7F7F7;
+}
+
+.slick-slider {
+  height: 100%;
+}
+
+.slick-list {
+  height: 100%;
+}
+
+.slick-track {
+  height: 100%;
+}
+.ant-carousel .slick-dots li {
+  width: 8px;
+  height: 8px;
+  background: #DFDFDF;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  button{
+    height: unset;
+  }
+  &.slick-active{
+    width: 8px;
+    height: 8px;
+    background: $gold;
+
+  }
 }
