@@ -1,6 +1,8 @@
 
-export interface ICard {
-  type?: string;
+export interface ICard { 
+  isNew?: boolean;
+  isDiscount?: boolean;
+  isPopular?: boolean;
   title: string;
   imgUrl: string;
   isExist: boolean;

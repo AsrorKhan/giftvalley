@@ -27,6 +27,7 @@ import { SliderComponent } from './components/slider/slider.component';
 import { MainComponent } from '../features/components/main/main.component';
 import { HeaderBannerComponent } from './components/header-banner/header-banner.component';
 import { HeaderSliderComponent } from './components/header-slider/header-slider.component';
+import { FilterNavComponent } from './components/filter-nav/filter-nav.component';
 
 const icons: IconDefinition[] = [
   PhoneOutline,
@@ -50,6 +51,7 @@ const icons: IconDefinition[] = [
     MainComponent,
     HeaderBannerComponent,
     HeaderSliderComponent,
+    FilterNavComponent,
   ],
   imports: [
     BrowserModule,
